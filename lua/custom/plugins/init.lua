@@ -9,7 +9,8 @@ return {
   -- 42 Header plugin (correct public repo)
   {
     'pbondoer/vim-42header',
-    config = function()
+    lazy = false,
+    init = function()
       vim.g.user42 = 'blanglai'
       vim.g.mail42 = 'blanglai@student.42.fr'
     end,
